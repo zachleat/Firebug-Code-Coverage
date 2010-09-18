@@ -1,0 +1,18 @@
+<?xml version="1.0"?> 
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"> 
+
+	<script type="application/x-javascript" src="chrome://FirebugCodeCoverage/content/FirebugCodeCoverage.js"/>
+
+    <commandset id="mainCommandSet"> 
+        <command id="cmd_toggleCoverage" oncommand="Firebug.CodeCoverager.toggleCoverage(FirebugContext)"/> 
+    </commandset>
+    <toolbar id="fbToolbar" align="center"> 
+        <hbox id="fbToolbarInner" insertbefore="fbDetachButton" flex="1" align="center"> 
+			<hbox id="fbConsoleButtons" position="3">
+                <toolbarbutton label="Code Coverage" class="toolbar-text-button" type="checkbox"
+                               tooltiptext="Function Level JavaScript Code Coverage" command="cmd_toggleCoverage"/>
+            </hbox>
+        </hbox>
+    </toolbar>
+</overlay>

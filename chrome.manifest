@@ -1,0 +1,3 @@
+content firebugcodecoverage chrome/content/firebugcodecoverage/ xpcnativewrappers=no
+
+overlay chrome://firebug/content/firebugOverlay.xul         chrome://firebugcodecoverage/content/FirebugCodeCoverageOverlay.xul
